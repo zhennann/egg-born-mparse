@@ -57,6 +57,7 @@ var PREFIX_D = './';
         return item;
       });
       if (parts.length < 2) return null;
+      if (parts.length >= 5) parts = parts.slice(3);
     }
 
     if (type === 'suite') {
