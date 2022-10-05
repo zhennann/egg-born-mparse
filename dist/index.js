@@ -82,6 +82,10 @@ var PREFIX_D = './';
   parseName: function parseName(moduleUrl) {
     if (!moduleUrl) return null;
 
+    if (moduleUrl.indexOf('/api/static/') === 0) {
+      moduleUrl = '/api/' + moduleUrl.substring('/api/static/'.length);
+    }
+
     if (moduleUrl.indexOf(PREFIX_A) === 0) {
       var posA = PREFIX_A.length;
       var posB = moduleUrl.indexOf('/', posA) + 1;

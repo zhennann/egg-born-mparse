@@ -40,6 +40,9 @@ export default {
   // ./egg-born-module-aa-hello/
   parseName(moduleUrl) {
     if (!moduleUrl) return null;
+    if (moduleUrl.indexOf('/api/static/') === 0) {
+      moduleUrl = '/api/' + moduleUrl.substring('/api/static/'.length);
+    }
     if (moduleUrl.indexOf(PREFIX_A) === 0) {
       const posA = PREFIX_A.length;
       const posB = moduleUrl.indexOf('/', posA) + 1;
