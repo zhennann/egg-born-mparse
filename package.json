@@ -1,6 +1,6 @@
 {
   "name": "egg-born-mparse",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "egg-born-mparse",
   "main": "dist/index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/zhennann/egg-born-mparse/issues"
   },
   "homepage": "https://github.com/zhennann/egg-born-mparse#readme",
-  "dependencies": {
+  "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.13.10",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
